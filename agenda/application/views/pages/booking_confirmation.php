@@ -19,7 +19,7 @@
         </small>
     </p>
 
-    <a href="https://psimarcossales.com/agenda/index.php/?provider=4&service=2" class="btn btn-primary btn-large">
+    <a href="https://recepcionistai.com/" class="btn btn-primary btn-large">
         <i class="fas fa-calendar-alt me-2"></i>
         <?= lang('go_to_booking_page') ?>
     </a>
