@@ -154,36 +154,26 @@
                     method: 'POST',
                     body: new FormData(form),
                     headers: {
-                        'Accept': 'application/json' // Solicita JSON como resposta
+                        'Accept': 'application/json' // Tenta preferir JSON, mas lida com redirecionamento
                     }
                 })
                     .then(response => {
-                        // Verifica se a resposta é OK antes de tentar parsear
+                        // Se a resposta for um redirecionamento (status 3xx), segue o redirecionamento
+                        if (response.redirected) {
+                            window.location.href = response.url; // Redireciona para a página HTML
+                            return; // Sai do then para evitar processamento adicional
+                        }
+                        // Se não for redirecionado, verifica se é OK
                         if (!response.ok) {
                             throw new Error('Erro na requisição: ' + response.statusText);
                         }
-                        // Tenta parsear como JSON, mas lida com erro se não for JSON
-                        const contentType = response.headers.get('content-type');
-                        if (contentType && contentType.includes('application/json')) {
-                            return response.json();
-                        } else {
-                            // Se não for JSON, assume sucesso e redireciona ou exibe mensagem
-                            return response.text().then(text => {
-                                successMessage.style.display = 'block';
-                                return { success: true };
-                            });
-                        }
+                        return response.text(); // Pega o texto da resposta (pode ser HTML ou JSON)
                     })
                     .then(data => {
+                        // Se chegou aqui e não redirecionou, assume sucesso temporário
                         loadingDiv.style.display = 'none';
-                        if (data.success) {
-                            successMessage.style.display = 'block';
-                            // Opcional: redirecionar após sucesso
-                            // window.location.href = 'URL_DE_SUCESSO';
-                        } else {
-                            alert('Erro ao agendar: ' + (data.message || 'Tente novamente.'));
-                            submitButton.disabled = false;
-                        }
+                        successMessage.style.display = 'block';
+                        // O redirecionamento será tratado pelo navegador após o fetch
                     })
                     .catch(error => {
                         loadingDiv.style.display = 'none';
