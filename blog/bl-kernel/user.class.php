@@ -146,7 +146,7 @@ class User
 		return $this->getValue('xing');
 	}
 
-	public function telegram()
+	public function whatsapp()
 	{
 		return $this->getValue('xing');
 	}
@@ -185,7 +185,7 @@ class User
 		$tmp['gitlab'] 		= $this->gitlab();
 		$tmp['linkedin'] 	= $this->linkedin();
 		$tmp['xing'] 		= $this->xing();
-		$tmp['telegram'] 		= $this->telegram();
+		$tmp['whatsapp'] 		= $this->whatsapp();
 		$tmp['mastodon']	= $this->mastodon();
 		$tmp['vk']		= $this->vk();
 		$tmp['profilePicture']	= $this->profilePicture();
