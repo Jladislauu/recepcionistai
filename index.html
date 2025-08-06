@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>RecepcionistAI - Agendamento Automatizado 24/7</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="agendamento automatizado, sistema de agendamento online, recepcionista virtual, agendamento para clínicas, IA para negócios"
+        name="keywords">
+    <meta
+        content="Automatize agendamentos 24/7 com RecepcionistAI. Sincronização de calendário e notificações automáticas. Teste grátis!"
+        name="description">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="RecepcionistAI">
+    <link rel="canonical" href="https://recepcionistai.com">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="RecepcionistAI - Agendamento Automatizado 24/7">
+    <meta property="og:description"
+        content="Automatize seus agendamentos com RecepcionistAI. Disponível 24/7, com sincronização de calendário e notificações automáticas.">
+    <meta property="og:image" content="https://recepcionistai.com/img/og-image.jpg">
+    <meta property="og:image:alt" content="Sistema de agendamento RecepcionistAI">
+    <meta property="og:url" content="https://recepcionistai.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RecepcionistAI - Agendamento Automatizado 24/7">
+    <meta name="twitter:description"
+        content="Automatize seus agendamentos com RecepcionistAI. Disponível 24/7, com sincronização de calendário e notificações automáticas.">
+    <meta name="twitter:image" content="https://recepcionistai.com/img/og-image.jpg">
+    <meta name="twitter:image:alt" content="Sistema de agendamento RecepcionistAI">
+
+    <!-- Favicon -->
+    <!-- Instruction: Replace img/favicon.ico with a branded RecepcionistAI favicon. Use alt text "Logotipo RecepcionistAI" for accessibility if applicable. -->
+    <link href="img/marca/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" href="img/marca/favicon.ico">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Urban Office Curitiba, Andar
+                        5 Sala 505</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+55 41 98818-6528</small>
+                    <small class="text-light"><i
+                            class="fa fa-envelope-open me-2"></i>recepcionistaistartup@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-whatsapp fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-instagram fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0" aria-label="Página inicial da RecepcionistAI">
+                <img src="img/marca/logo-navbar.png" alt="" style="width: 50%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-label="Abrir menu de navegação">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="#index" class="nav-item nav-link active" aria-label="Início">Início</a>
+                    <a href="#sobre" class="nav-item nav-link" aria-label="Sobre o agendamento automatizado">Sobre</a>
+                    <a href="#Planos" class="nav-item nav-link" aria-label="Nossos planos de agendamento">Planos</a>
+                    <a href="#contato" class="nav-item nav-link" aria-label="Contato">Contato</a>
+                    <a href="#Planos" class="btn btn-primary py-2 px-4 ms-auto"
+                        aria-label="Teste grátis de agendamento automatizado com RecepcionistAI">Demonstração</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Instruction: Use img/carousel-1.jpg to show the Easy!Appointments booking interface or a client scheduling on mobile. -->
+                    <img class="w-100" src="img/carousel-1.jpg"
+                        alt="Sistema de agendamento automatizado RecepcionistAI">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3">Agendamento Automatizado com IA</h5>
+                            <h1 class="display-1 text-white mb-md-4">Disponível 24/7 para Seus Clientes</h1>
+                            <a href="#Planos" class="btn btn-primary py-md-3 px-md-5 me-3"
+                                aria-label="Teste grátis do RecepcionistAI">Solicitar Proposta</a>
+                            <a href="https://wa.me/5541988186528" class="btn btn-outline-light py-md-3 px-md-5"
+                                aria-label="Fale conosco pelo WhatsApp">Fale pelo WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Instruction: Use img/carousel-2.jpg to show calendar synchronization or automated notifications in Easy!Appointments. -->
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Sincronização de calendário com RecepcionistAI">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3">Melhore a Experiência do Cliente</h5>
+                            <h1 class="display-1 text-white mb-md-4">Sincronização de Calendário e Notificações</h1>
+                            <a href="#Planos" class="btn btn-primary py-md-3 px-md-5 me-3"
+                                aria-label="Teste grátis do RecepcionistAI">Teste Grátis</a>
+                            <a href="https://wa.me/5541988186528" class="btn btn-outline-light py-md-3 px-md-5"
+                                aria-label="Fale conosco pelo WhatsApp">Fale pelo WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev"
+                aria-label="Slide anterior">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next"
+                aria-label="Próximo slide">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <p class="text-center mb-4">Descubra como o RecepcionistAI transforma agendamentos automatizados para
+                clínicas e empresas.</p>
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+                        style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                            style="width: 60px; height: 60px;">
+                            <!-- Instruction: Manter fa-users ou trocar por fa-calendar para reforçar agendamento. -->
+                            <i class="fa fa-clock text-primary" aria-label="Ícone de clientes atendidos"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Agende 24/7</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4"
+                        style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2"
+                            style="width: 60px; height: 60px;">
+                            <!-- Instruction: Manter fa-check ou trocar por fa-calendar-check para agendamento concluído. -->
+                            <i class="fa fa-check text-white" aria-label="Ícone de agendamentos realizados"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-primary mb-0">Otimize Agendamentos</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+                        style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                            style="width: 60px; height: 60px;">
+                            <!-- Instruction: Manter fa-award ou trocar por fa-building para empresas. -->
+                            <i class="fa fa-award text-primary" aria-label="Ícone de empresas ativas"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Seja Referência</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Sobre o Agendamento Automatizado</h5>
+                        <h1 class="mb-0">Automatize Seu Agendamento e Foque no Que Importa</h1>
+                    </div>
+                    <p class="mb-4">Com o RecepcionistAI, seu agendamento fica mais fácil. Clientes marcam 24/7 dentro
+                        da sua disponibilidade, com sincronização de calendário e notificações automáticas, reduzindo
+                        custos e elevando a experiência.</p>
+                    <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Configuração sob Medida</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Sincronização com Calendário
+                            </h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Suporte 24/7</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Planos Acessíveis</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white" aria-label="Ícone de contato por telefone"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Entre em contato e saiba mais</h5>
+                            <h4 class="text-primary mb-0"><a href="https://wa.me/5541988186528"
+                                    aria-label="Contato via WhatsApp">+55 41 98818-6528</a></h4>
+                        </div>
+                    </div>
+                    <a href="#Planos" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s"
+                        aria-label="Teste grátis do RecepcionistAI">Agendar Demonstração</a>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <!-- Instruction: Use img/about.jpg to show the Easy!Appointments interface or a client using the scheduling system. -->
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+                            src="img/marca/TRABALHANDO 247 PARA VOCÊ.png"
+                            alt="Interface do sistema de agendamento automatizado RecepcionistAI"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Soluções de Agendamento Automatizado</h5>
+                <h1 class="mb-0">RecepcionistAI, sua assistente virtual para agendamentos</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <!-- Instruction: Manter fa-cubes ou trocar por fa-calendar para agendamento. -->
+                                <i class="fa fa-cubes text-white" aria-label="Ícone de agenda automatizada"></i>
+                            </div>
+                            <h4>Agenda Automatizada</h4>
+                            <p class="mb-0">Clientes acessam um link, escolhem o melhor horário dentro da sua
+                                disponibilidade e o agendamento é feito automaticamente com sincronização de calendário.
+                            </p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <!-- Instruction: Trocar fa-award por fa-bell para notificações. -->
+                                <i class="fa fa-award text-white" aria-label="Ícone de notificações automáticas"></i>
+                            </div>
+                            <h4>Notificações Automáticas</h4>
+                            <p class="mb-0">Receba lembretes e notifique clientes automaticamente, garantindo que nenhum
+                                agendamento seja perdido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+                    <div class="position-relative h-100">
+                        <!-- Instruction: Use img/feature.jpg to show the Easy!Appointments interface or a client scheduling. -->
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s"
+                            src="img/feature.jpg" alt="Interface do sistema de agendamento RecepcionistAI"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <!-- Instruction: Manter fa-users-cog ou trocar por fa-headset para suporte. -->
+                                <i class="fa fa-users-cog text-white" aria-label="Ícone de suporte dedicado"></i>
+                            </div>
+                            <h4>Suporte Dedicado</h4>
+                            <p class="mb-0">Nosso suporte especializado está pronto para configurar e otimizar seu
+                                sistema de agendamento.</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <!-- Instruction: Manter fa-phone-alt ou trocar por fa-clock para disponibilidade. -->
+                                <i class="fa fa-phone-alt text-white" aria-label="Ícone de disponibilidade 24/7"></i>
+                            </div>
+                            <h4>24/7 Disponível</h4>
+                            <p class="mb-0">Esteja disponível 24/7 para seus clientes com agendamentos automáticos, sem
+                                perder oportunidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Serviços de Agendamento Automatizado</h5>
+                <h1 class="mb-0">Soluções para otimizar sua gestão de agendamentos</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <!-- Instruction: Manter fa-shield-alt ou trocar por fa-calendar para agendamento. -->
+                            <i class="fa fa-shield-alt text-white" aria-label="Ícone de agenda automatizada"></i>
+                        </div>
+                        <h4 class="mb-3">Agenda Automatizada</h4>
+                        <p class="m-0">Clientes agendam 24/7 sem intervenção, com sincronização de calendário e
+                            notificações automáticas.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="#Planos"
+                            aria-label="Saiba mais sobre agenda automatizada">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <!-- Instruction: Trocar fa-chart-pie por fa-chart-line para relatórios. -->
+                            <i class="fa fa-chart-pie text-white" aria-label="Ícone de relatórios de agendamento"></i>
+                        </div>
+                        <h4 class="mb-3">Relatórios de Agendamento</h4>
+                        <p class="m-0">Acompanhe seus agendamentos com relatórios detalhados e insights para sua
+                            empresa.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="#Planos"
+                            aria-label="Saiba mais sobre relatórios de agendamento">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <!-- Instruction: Trocar fa-code por fa-plug para integrações. -->
+                            <i class="fa fa-code text-white" aria-label="Ícone de integrações personalizadas"></i>
+                        </div>
+                        <h4 class="mb-3">Integrações Personalizadas</h4>
+                        <p class="m-0">Integre o RecepcionistAI com suas ferramentas favoritas para uma gestão completa.
+                        </p>
+                        <a class="btn btn-lg btn-primary rounded" href="#Planos"
+                            aria-label="Saiba mais sobre integrações personalizadas">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <!-- Instruction: Manter fab fa-android ou trocar por fa-mobile para dispositivos. -->
+                            <i class="fab fa-android text-white" aria-label="Ícone de gestão de agendamentos"></i>
+                        </div>
+                        <h4 class="mb-3">Gerencie Seus Agendamentos</h4>
+                        <p class="m-0">Gerencie agendamentos de forma eficiente com um sistema automatizado e acessível
+                            em qualquer dispositivo.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="#Planos"
+                            aria-label="Saiba mais sobre gestão de agendamentos">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <!-- Instruction: Trocar fa-search por fa-bell para notificações. -->
+                            <i class="fa fa-search text-white" aria-label="Ícone de notificações em tempo real"></i>
+                        </div>
+                        <h4 class="mb-3">Notificações em Tempo Real</h4>
+                        <p class="m-0">Receba alertas instantâneos sobre novos agendamentos e cancelamentos.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="#Planos"
+                            aria-label="Saiba mais sobre notificações em tempo real">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div
+                        class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                        <h3 class="text-white mb-3">Fale Conosco</h3>
+                        <p class="text-white mb-3">Entre em contato para mais informações sobre o RecepcionistAI.</p>
+                        <h2 class="text-white mb-0"><a href="https://wa.me/5541988186528"
+                                aria-label="Contato via WhatsApp">+55 41 98818-6528</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Preços e Planos</h5>
+                <h1 class="mb-0">Soluções de Agendamento para o Seu Negócio</h1>
+            </div>
+            <div class="row g-0">
+                <!-- Plano Básico -->
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Plano Básico</h4>
+                            <small class="text-uppercase">Para Pequenos Negócios</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">R$</small>59,90<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                            </h1>
+                            <p class="text-muted mb-4">Cobrado anualmente: R$718,80</p>
+                            <div class="d-flex justify-content-between mb-3"><span>Agendamento Online 24/7</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Subdomínio
+                                    RecepcionistAI</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Notificações Automáticas por
+                                    E-mail</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Agendamentos Ilimitados</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Usuários Ilimitados</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Sincronização de
+                                    Calendário</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Relatórios Simples</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Suporte Básico por
+                                    E-mail</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Domínio Próprio</span><i
+                                    class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Landing Page Otimizada</span><i
+                                    class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Agente RecepcionistAI
+                                    24/7</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <a href="https://buy.stripe.com/test_aFa4gz69dfZW4lmfKh4ow00"
+                                class="btn btn-primary py-2 px-4 mt-4">Assinar
+                                Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plano Avançado (Mais Popular) -->
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Plano Avançado</h4>
+                            <small class="text-uppercase">Mais Popular</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">R$</small>99,90<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                            </h1>
+                            <p class="text-muted mb-4">Cobrado anualmente: R$1.198,80</p>
+                            <div class="d-flex justify-content-between mb-3"><span>Todos os recursos da Agenda
+                                    Automatizada</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Landing Page Otimizada
+                                    (SEO)</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Domínio Próprio</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Análise de Conversão</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Suporte Prioritário</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Agente RecepcionistAI
+                                    24/7</span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <a href="https://buy.stripe.com/test_aFa4gz69dfZW4lmfKh4ow00"
+                                class="btn btn-primary py-2 px-4 mt-4">Assinar
+                                Agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plano Premium -->
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h4 class="text-primary mb-1">Plano Premium</h4>
+                            <small class="text-uppercase">Para Negócios Avançados</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">R$</small>150,00+<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                            </h1>
+                            <p class="text-muted mb-4">Orçamento personalizado</p>
+                            <div class="d-flex justify-content-between mb-3"><span>Todos os recursos da Agenda
+                                    Automatizada + Landing Page</span><i class="fa fa-check text-primary pt-1"></i>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3"><span>Agente RecepcionistAI
+                                    24/7</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Atendimento Humanizado por
+                                    IA</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span>Integrações
+                                    Personalizadas</span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span>Suporte Dedicado</span><i
+                                    class="fa fa-check text-primary pt-1"></i></div>
+                            <a href="/orcamento" class="btn btn-primary py-2 px-4 mt-4">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">Solicite uma Cotação</h5>
+                        <h1 class="mb-0">Entre em contato com a RecepcionistAI!</h1>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"
+                                    aria-label="Ícone de resposta em 24 horas"></i>Resposta em até 24 horas</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"
+                                    aria-label="Ícone de suporte 24/7 por telefone"></i>Suporte 24/7 por Telefone
+                            </h5>
+                        </div>
+                    </div>
+                    <p class="mb-4">Com o RecepcionistAI, automatize seus agendamentos 24/7, sincronize com seu
+                        calendário e melhore a experiência dos clientes. Entre em contato para uma solução
+                        personalizada!</p>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white" aria-label="Ícone de contato telefônico"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Fale com a gente</h5>
+                            <h4 class="text-primary mb-0"><a href="https://wa.me/5541988186528"
+                                    aria-label="Contato via WhatsApp">+55 41 98818-6528</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn"
+                        data-wow-delay="0.9s">
+                        <form id="quoteForm" onsubmit="sendToWhatsApp(event)">
+                            <div class="row g-3">
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" id="name" name="name"
+                                        placeholder="Seu Nome" style="height: 55px;" required
+                                        aria-label="Digite seu nome">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control bg-light border-0" id="email" name="email"
+                                        placeholder="Seu E-mail" style="height: 55px;" required
+                                        aria-label="Digite seu e-mail">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select bg-light border-0" id="service" name="service"
+                                        style="height: 55px;" required aria-label="Selecione um serviço">
+                                        <option value="" disabled selected>Selecione um Serviço</option>
+                                        <option value="Agenda Automatizada">Agenda Automatizada</option>
+                                        <option value="Relatórios de Agendamento">Relatórios de Agendamento</option>
+                                        <option value="Notificações em Tempo Real">Notificações em Tempo Real</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-light border-0" id="message" name="message"
+                                        rows="3" placeholder="Sua Mensagem" aria-label="Digite sua mensagem"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-secondary w-100 py-3" type="submit"
+                                        aria-label="Enviar solicitação de demonstração">Solicitar Demonstração</button>
+                                </div>
+                                <div class="col-12">
+                                    <p id="formError" class="text-danger d-none mt-2">Por favor, preencha todos os
+                                        campos obrigatórios.</p>
+                                </div>
+                            </div>
+                        </form>
+
+                        <script>
+                            function sendToWhatsApp(event) {
+                                event.preventDefault();
+
+                                // Get form values
+                                const name = document.getElementById('name').value.trim();
+                                const email = document.getElementById('email').value.trim();
+                                const service = document.getElementById('service').value;
+                                const message = document.getElementById('message').value.trim();
+                                const errorElement = document.getElementById('formError');
+
+                                // Validate required fields
+                                if (!name || !email || !service) {
+                                    errorElement.classList.remove('d-none');
+                                    return;
+                                } else {
+                                    errorElement.classList.add('d-none');
+                                }
+
+                                // Construct WhatsApp message
+                                const whatsappNumber = '+5541988186528';
+                                const text = `Olá, gostaria de solicitar uma demonstração do RecepcionistAI.%0A%0A` +
+                                    `Nome: ${encodeURIComponent(name)}%0A` +
+                                    `E-mail: ${encodeURIComponent(email)}%0A` +
+                                    `Serviço: ${encodeURIComponent(service)}%0A` +
+                                    `Mensagem: ${encodeURIComponent(message || 'Nenhuma mensagem adicional')}`;
+
+                                // Redirect to WhatsApp
+                                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+                                window.open(whatsappUrl, '_blank');
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Fale Conosco</h5>
+                <h1 class="mb-0">Tem dúvidas sobre agendamento? Entre em contato com a RecepcionistAI!</h1>
+            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white" aria-label="Ícone de suporte telefônico"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Ligue para suporte</h5>
+                            <h4 class="text-primary mb-0"><a href="https://wa.me/5541988186528"
+                                    aria-label="Contato via WhatsApp">+55 41 98818-6528</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.4s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-envelope-open text-white" aria-label="Ícone de e-mail de contato"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Envie-nos um e-mail</h5>
+                            <h4 class="text-primary mb-0">recepcionistaistartup@gmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.8s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-map-marker-alt text-white" aria-label="Ícone de localização"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Localização</h5>
+                            <h4 class="text-primary mb-0">Curitiba, PR, Brasil</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Seu Nome"
+                                    style="height: 55px;">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Seu E-mail"
+                                    style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Assunto"
+                                    style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4"
+                                    placeholder="Sua Mensagem"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar
+                                    Consulta</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+                    <!-- Instruction: Update the iframe src to reflect the real location of RecepcionistAI (e.g., Curitiba, PR) or remove if not applicable. -->
+                    <iframe class="position-relative rounded w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.6492279444496!2d-49.26417822373372!3d-25.416549632361306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4231c5e138f%3A0xf4f98565984747b7!2sUrban%20Office%20Curitiba%20-%20Cyrela!5e0!3m2!1spt-PT!2sbr!4v1754481191145!5m2!1spt-PT!2sbr"
+                        frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0" alt="Mapa da localização da RecepcionistAI em Curitiba, PR"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <img class="img-fluid mb-3" src="img/marca/logo-navbar.png" alt="Logo RecepcionistAI"
+                            style="max-width: 200px;">
+                        <p class="mt-3 mb-4">A RecepcionistAI oferece agendamentos automatizados 24/7,
+                            sincronização de calendário e suporte dedicado para otimizar seu negócio.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Seu E-mail">
+                                <button class="btn btn-dark">Assine Nossa Newsletter</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Entre em Contato</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2" aria-label="Ícone de localização"></i>
+                                <p class="mb-0">Curitiba, PR, Brasil</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"
+                                    aria-label="Ícone de e-mail de contato"></i>
+                                <p class="mb-0">recepcionistaistartup@gmail.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"
+                                    aria-label="Ícone de suporte telefônico"></i>
+                                <p class="mb-0"><a href="https://wa.me/5541988186528"
+                                        aria-label="Contato via WhatsApp">+55 41 98818-6528</a></p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"
+                                    aria-label="Twitter da RecepcionistAI"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"
+                                    aria-label="Facebook da RecepcionistAI"><i
+                                        class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"
+                                    aria-label="LinkedIn da RecepcionistAI"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"
+                                    aria-label="Instagram da RecepcionistAI"><i
+                                        class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Links Rápidos</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#index"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Início</a>
+                                <a class="text-light mb-2" href="#sobre"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Sobre o
+                                    Agendamento</a>
+                                <a class="text-light mb-2" href="#Planos"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Nossos Planos</a>
+                                <a class="text-light mb-2" href="#servicos"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Serviços</a>
+                                <a class="text-light mb-2" href="#contato"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Contato</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Explore Mais</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#index"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Início</a>
+                                <a class="text-light mb-2" href="#sobre"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Sobre o
+                                    Agendamento</a>
+                                <a class="text-light mb-2" href="#Planos"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Nossos Planos</a>
+                                <a class="text-light mb-2" href="#servicos"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Serviços</a>
+                                <a class="text-light mb-2" href="#contato"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-white" style="background: #061429;">
+            <div class="container text-center">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                            <p class="mb-0">&copy; 2025 RecepcionistAI. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i
+                            class="bi bi-arrow-up"></i></a> -->
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5541988186528" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
+    </a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Abre links externos em nova aba -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("a[href]");
+
+            links.forEach(function (link) {
+                // Garante que o link não é um âncora interna (#) ou link vazio
+                if (link.getAttribute("href").trim() !== "" && !link.getAttribute("href").startsWith("#")) {
+                    link.setAttribute("target", "_blank");
+                    link.setAttribute("rel", "noopener noreferrer"); // segurança recomendada
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
