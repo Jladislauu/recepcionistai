@@ -32,7 +32,7 @@ class Site extends dbJSON
 		'gitlab' =>		'',
 		'linkedin' =>		'',
 		'xing' =>		'',
-		'telegram' => '',
+		'whatsapp' => '',
 		'mastodon' =>		'',
 		'dribbble' =>		'',
 		'vk' =>			'',

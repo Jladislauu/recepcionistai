@@ -1220,7 +1220,7 @@ url("./fonts/bootstrap-icons.woff?8bd4575acf83c7696dc7a14a966660a3") format("wof
 .bi-tag::before { content: "\f5b0"; }
 .bi-tags-fill::before { content: "\f5b1"; }
 .bi-tags::before { content: "\f5b2"; }
-.bi-telegram::before { content: "\f5b3"; }
+.bi-whatsapp::before { content: "\f5b3"; }
 .bi-telephone-fill::before { content: "\f5b4"; }
 .bi-telephone-forward-fill::before { content: "\f5b5"; }
 .bi-telephone-forward::before { content: "\f5b6"; }

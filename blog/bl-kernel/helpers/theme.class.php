@@ -15,7 +15,7 @@ class Theme
 			'codepen' => 'Codepen',
 			'linkedin' => 'Linkedin',
 			'xing' => 'Xing',
-			'telegram' => 'Telegram',
+			'whatsapp' => 'whatsapp',
 			'mastodon' => 'Mastodon',
 			'vk' => 'VK',
 			'dribbble' => 'Dribbble'

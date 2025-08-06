@@ -269,9 +269,9 @@ echo Bootstrap::formInputHidden(array(
 		));
 
 		echo Bootstrap::formInputText(array(
-			'name' => 'telegram',
-			'label' => 'Telegram',
-			'value' => $user->telegram(),
+			'name' => 'whatsapp',
+			'label' => 'whatsapp',
+			'value' => $user->whatsapp(),
 			'class' => '',
 			'placeholder' => '',
 			'tip' => ''
