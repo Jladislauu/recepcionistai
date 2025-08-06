@@ -152,13 +152,34 @@
                 // Envia o formulário via AJAX
                 fetch(form.action, {
                     method: 'POST',
-                    body: new FormData(form)
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json' // Solicita JSON como resposta
+                    }
                 })
-                    .then(response => response.json())
+                    .then(response => {
+                        // Verifica se a resposta é OK antes de tentar parsear
+                        if (!response.ok) {
+                            throw new Error('Erro na requisição: ' + response.statusText);
+                        }
+                        // Tenta parsear como JSON, mas lida com erro se não for JSON
+                        const contentType = response.headers.get('content-type');
+                        if (contentType && contentType.includes('application/json')) {
+                            return response.json();
+                        } else {
+                            // Se não for JSON, assume sucesso e redireciona ou exibe mensagem
+                            return response.text().then(text => {
+                                successMessage.style.display = 'block';
+                                return { success: true };
+                            });
+                        }
+                    })
                     .then(data => {
                         loadingDiv.style.display = 'none';
                         if (data.success) {
                             successMessage.style.display = 'block';
+                            // Opcional: redirecionar após sucesso
+                            // window.location.href = 'URL_DE_SUCESSO';
                         } else {
                             alert('Erro ao agendar: ' + (data.message || 'Tente novamente.'));
                             submitButton.disabled = false;
