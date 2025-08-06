@@ -1,0 +1,11 @@
+Creative Commons Attribution-NonCommercial License (CC BY-NC)
+
+Copyright (c) 2024 Ryan Spegal, BluditLab.com <ryan@spegal.dev>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this material and associated documentation files (the "Material"), to use, copy, modify, and distribute the Material, subject to the following conditions:
+
+1. The Material must be used for non-commercial purposes only.
+2. Appropriate credit must be given, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+3. You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+The Material is provided "AS IS", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort or otherwise, arising from, out of, or in connection with the Material or the use or other dealings in the Material.
