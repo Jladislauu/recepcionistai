@@ -20,7 +20,6 @@
             <div id="customer-details" class="col-12 col-md-6 text-center text-md-end">
                 <!-- JS -->
             </div>
-       
         </div>
 
         <?php slot('after_details'); ?>
@@ -72,33 +71,46 @@
         <?php slot('after_select_policies'); ?>
     </div>
 
-    <div class="command-buttons">
+    <div class="command-buttons position-relative">
         <button type="button" id="button-back-4" class="btn button-back btn-outline-secondary"
                 data-step_index="4">
             <i class="fas fa-chevron-left me-2"></i>
             <?= lang('back') ?>
         </button>
         <form id="book-appointment-form" style="display:inline-block" method="post">
-            <button id="book-appointment-submit" type="button" class="btn btn-primary">
-                <i class="fas fa-check-square me-2"></i>
-                <?= $manage_mode ? lang('update') : lang('confirm') ?>
+            <button id="book-appointment-submit" type="button" class="btn btn-primary position-relative">
+                <span class="button-text">
+                    <i class="fas fa-check-square me-2"></i>
+                    <?= $manage_mode ? lang('update') : lang('confirm') ?>
+                </span>
+                <span class="spinner-border spinner-border-sm position-absolute" role="status" style="display: none;">
+                    <span class="visually-hidden">Agendando...</span>
+                </span>
             </button>
             <input type="hidden" name="csrfToken"/>
             <input type="hidden" name="post_data"/>
         </form>
     </div>
-</div>
 
-<!-- Spinner de carregamento -->
-<div id="loading-spinner" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;">
-    <div class="spinner-border text-primary" role="status">
-        <span class="visually-hidden">Agendando...</span>
-    </div>
-    <p>Agendando...</p>
+    <script>
+        document.getElementById('book-appointment-submit').addEventListener('click', function() {
+            const button = this;
+            const buttonText = button.querySelector('.button-text');
+            const spinner = button.querySelector('.spinner-border');
+            
+            // Disable button to prevent multiple clicks
+            button.disabled = true;
+            // Hide button text and show spinner
+            buttonText.style.display = 'none';
+            spinner.style.display = 'inline-block';
+            
+            // Simulate form submission (replace with actual form submission logic)
+            setTimeout(() => {
+                // Re-enable button and restore text (optional, depending on form submission outcome)
+                button.disabled = false;
+                buttonText.style.display = 'inline';
+                spinner.style.display = 'none';
+            }, 5000); // Simulate 5-second delay
+        });
+    </script>
 </div>
-
-<script>
-document.getElementById('book-appointment-submit').addEventListener('click', function() {
-    document.getElementById('loading-spinner').style.display = 'block';
-});
-</script>
